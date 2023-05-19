@@ -5,7 +5,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>SM64</title>
+  <title>Super Mario 64</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 
   <!-- CSS -->
   <style>
@@ -23,7 +24,8 @@
       }
     }
 
-    body, html {
+    body,
+    html {
       margin: 0;
       padding: 0;
       width: 100vw;
@@ -56,7 +58,7 @@
       display: inline-block;
       font: bold 10pt Arial, Helvetica, sans-serif;
       font-size: 16px;
-      cursor:pointer;
+      cursor: pointer;
     }
 
     #container {
@@ -131,9 +133,8 @@
       <h2>Super Mario 64 Browser Edition!</h2>
 
       <div id="infolist">
-        <p>Document edited to run off a local file. All external files such as the game are hosted on https://archive.org</p>
+        <p>All assets hosted on this github page.</p>
         <p>Save Data is saved in your browser local storage, clearing cache will delete it!</p>
-        <p>Press Tab Options to view settings that allow you to disguise your tab from others.</p>
         <p>Page up/down to show or hide these instructions. Or just scroll.</p>
       </div>
     </div>
@@ -176,16 +177,11 @@
 
             startAudio()
           }
-          function tabOptions() {
-            // Disguise Tab or revert changes.
-
-
-          }
         </script>
 
         <button type="button" onclick="loadData()">LOAD SAVE</button>
         <button type="button" onclick="saveData()">EXPORT SAVE</button>
-        <button type="button" onclick="tabOptions()">TAB OPTIONS</button>
+        <button type="button" onclick="tabOptions()">TAB DISGUISE</button>
       </ul>
     </div>
 
@@ -225,8 +221,7 @@
     };
     console.log(Module)
   </script>
-  <script async type="text/javascript" src="loader.js"></script> <!-- https://archive.org/download/js_script_202305/loader.js-->
-  <script>
+  <script async type="text/javascript" src="loader.js"></script>
   </script>
 </body>
 
